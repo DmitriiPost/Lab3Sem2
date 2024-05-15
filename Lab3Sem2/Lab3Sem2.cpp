@@ -314,7 +314,7 @@ void menu()
     {
         string s;
         Stack* prNot, * obrNot;
-        cout << "Введите выражение: ";
+        cout << "Введите выражение(без пробелов): ";
         cin >> s;
         int len = size(s);
         prNot = prPolNot(len, s);
