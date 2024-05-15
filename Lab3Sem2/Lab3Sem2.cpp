@@ -20,52 +20,6 @@ int sizeStack(Stack* head)
     return count;
 }
 
-
-/*void push(Stack** head, string data)
-{
-    Stack* curr = new Stack;
-    curr->value = data;
-    curr->next = (*head);
-    (*head) = curr;
-}*/
-
-/*Stack* getLast(Stack* head)
-{
-    if (head == 0)
-    {
-        return 0;
-    }
-    while (head->next)
-    {
-        head = head->next;
-    }
-    return head;
-}*/
-
-/*void pushBack(Stack* head, string data)
-{
-    Stack* last = getLast(head);
-    Stack* curr = new Stack;
-    curr->value = data;
-    curr->next = 0;
-    last->next = curr;
-}*/
-
-/*string pop(Stack** head)
-{
-    Stack* prev = 0;
-    string data;
-    if (head == 0)
-    {
-        exit(-1);
-    }
-    prev = (*head);
-    data = prev->value;
-    (*head) = (*head)->next;
-    free(prev);
-    return data;
-}*/
-
 void deleteStack(Stack* head)
 {
       Stack* prev = 0;
@@ -87,51 +41,6 @@ void printStack(const Stack* head)
     cout << '\n';
     return;
 }
-
-/*Stack* getLastButOne(Stack* head)
-{
-    if (head == 0)
-    {
-        exit(-2);
-    }
-    if (head->next == 0)
-    {
-        return 0;
-    }
-    while (head->next->next)
-    {
-        head = head->next;
-    }
-    return head;
-}*/
-
-/*string popBack(Stack** head)
-{
-    Stack* last = 0;
-    string data;
-    if (head == 0)
-    {
-        exit(-1);
-    }
-    if ((*head) == 0)
-    {
-        exit(-1);
-    }
-    last = getLastButOne(*head);
-    data = last->next->value;
-    if (last == 0)
-    {
-        free(*head);
-        *head = 0;
-    }
-    else 
-    {
-        free(last->next);
-        last->next = 0;
-    }
-    return data;
-}    */
-
 
 int weight(char operation)
 {
